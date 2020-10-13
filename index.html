@@ -6,6 +6,8 @@
     <title>Practicas de git</title>
     <style>
         body{
+            margin: 0;
+            padding: 0;
             background-color: black;
             color: white;
             text-align: center;
@@ -26,7 +28,7 @@
             color:black;
             background-color: white;
             text-align: left;
-            margin: 8px;
+            margin: 0;
         }
         .menu-container{
             padding: 15px;
@@ -35,6 +37,8 @@
             border: 1px solid black;
             border-radius: 4px;
             padding: 2px 15px;
+            margin: 0 5px;
+            vertical-align: middle;
             display: inline-block;
         }
         .footer{
@@ -43,11 +47,24 @@
             position: absolute;
             bottom: 0;
         }
+        .item-container:not(:first-child){
+            float: right;
+        }
+        .profile-container{
+            max-width: 85px;
+        }
+        img{
+            max-width: 100%;
+
+        }
     </style>
 </head>
 <body>
     <div class="menu">
         <div class="menu-container">
+            <div class="item-container profile-container">
+                <img src="assets/img/profile.png" alt="">
+            </div>
             <div class="item-container">
                 <p>hola</p>
             </div>
